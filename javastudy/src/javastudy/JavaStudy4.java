@@ -11,6 +11,9 @@ public class JavaStudy4 {
 		if(str.equals("a") || str.equals("A")) {
 			System.out.println("Apple");
 		}
+		else {
+			System.out.println("not solved");
+		}
 	}
 
 }
