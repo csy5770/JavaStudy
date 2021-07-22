@@ -2,19 +2,23 @@ package javastudy;
 
 import java.util.Scanner;
 
-public class JavaStudy4 {
+public class JavaStudy5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
 		String str=s.nextLine();
-		if(str.equals("a") || str.equals("A")) {
+		
+		switch(str) {
+		case "a","A" :
 			System.out.println("Apple");
-		}
-		else {
+			break;
+		case "b","B" :
+			System.out.println("Banana");
+			break;
+		default :
 			System.out.println("not solved");
 		}
 		System.out.println("Exit");
 	}
-
 }
