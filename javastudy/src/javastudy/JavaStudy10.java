@@ -19,7 +19,7 @@ public class JavaStudy10 {
 		String str = s.nextLine();
 		// s.nextLine() 사용자한테 공백을 포함한 문자열을 입력받는 메서드(함수)
 		do {
-			str = s.nextLine();
+			
 			if(str.equals("m")|| str.equals("M")) {
 				System.out.println("메뉴");
 			}
@@ -30,10 +30,12 @@ public class JavaStudy10 {
 				System.out.println("매출");
 			}
 			else {
+				if(!str.equals("x")&&!str.equals("X")) {
 				System.out.println("잘못 된 입력");
+				}
 			}
-			
-		} while(!str.equals("x")||!str.equals("X"));
+			str = s.nextLine();
+		} while(!str.equals("x")&&!str.equals("X"));
 		System.out.println("종료");
 		s.close();
 	}
