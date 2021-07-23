@@ -2,7 +2,7 @@ package javastudy;
 
 public class JavaStudy2 {
 
-	public static void main(String[] args) {
+	public static void main(JavaStudy1[] args) {
 		int a = 5;
 		//이 구문에서 +는 연결 연산자로 사용.
 		System.out.println(a+"*1="+a*1);
