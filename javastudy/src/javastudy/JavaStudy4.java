@@ -15,6 +15,7 @@ public class JavaStudy4 {
 			System.out.println("not solved");
 		}
 		System.out.println("Exit");
+		s.close();
 	}
 
 }

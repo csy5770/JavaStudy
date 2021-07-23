@@ -20,5 +20,6 @@ public class JavaStudy5 {
 			System.out.println("not solved");
 		}
 		System.out.println("Exit");
+		s.close();
 	}
 }
