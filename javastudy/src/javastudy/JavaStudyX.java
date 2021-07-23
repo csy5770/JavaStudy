@@ -2,7 +2,7 @@ package javastudy;
 
 import java.util.Scanner;
 
-public class JavaStudy10 {
+public class JavaStudyX {
 
 	public static void main(String[] args) {
 		/*
