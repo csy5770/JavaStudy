@@ -3,7 +3,7 @@ package javastudy2;
 public class JavaStudy04 {
 
 	public static void main(String[] args) {
-		int a=4;
+		int a=4;//가로, 행 수.
 		int b=1;
 		int c=0;
 		for(int i=1; i<=a; i++) {
