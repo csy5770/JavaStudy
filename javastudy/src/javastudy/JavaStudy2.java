@@ -4,7 +4,7 @@ public class JavaStudy2 {
 
 	public static void main(JavaStudy1[] args) {
 		int a = 5;
-		//ÀÌ ±¸¹®¿¡¼­ +´Â ¿¬°á ¿¬»êÀÚ·Î »ç¿ë.
+		//ì´ êµ¬ë¬¸ì—ì„œ +ëŠ” ì—°ê²° ì—°ì‚°ìë¡œ ì‚¬ìš©.
 		System.out.println(a+"*1="+a*1);
 		System.out.println(a+"*2="+a*2);
 		System.out.println(a+"*3="+a*3);

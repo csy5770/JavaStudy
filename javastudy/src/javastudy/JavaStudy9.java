@@ -10,10 +10,10 @@ public class JavaStudy9 {
         
         do{
             a = s.nextInt();
-            System.out.println("ÀÔ·Â °ª :" + a);  
+            System.out.println("ìž…ë ¥ ê°’ :" + a);  
         }while(a != 10);  
 
-        System.out.println("Á¾·á");
+        System.out.println("ì¢…ë£Œ");
         s.close();
     }
 }

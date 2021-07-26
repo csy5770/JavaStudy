@@ -3,7 +3,7 @@ package javastudy2;
 public class JavaStudy04 {
 
 	public static void main(String[] args) {
-		int a=4;//°¡·Î, Çà ¼ö.
+		int a=4;//ê°€ë¡œ, í–‰ í¬ê¸°.
 		int b=1;
 		int c=0;
 		for(int i=1; i<=a; i++) {

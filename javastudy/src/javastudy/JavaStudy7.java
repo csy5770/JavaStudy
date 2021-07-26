@@ -3,30 +3,30 @@ package javastudy;
 public class JavaStudy7 {
 
 	public static void main(String[] args) {
-		int n = 1; //1~12 Ãâ·Â (while È°¿ë)
+		int n = 1; //1~12 (while í™œìš©)
 		while(n<=12) {
 			System.out.println(n);
 			n++;
 		}
-		System.out.println(""); //°ø¹é »ý¼º(¿£ÅÍ)
+		System.out.println(""); //ê³µë°± ìƒì„±(ì—”í„°)
 		
-		int a = 1; //1~100 Ãâ·Â (while È°¿ë)
+		int a = 1; //1~100 ì¶œë ¥(while í™œìš©)
 		while(a<=100) {
 			System.out.println(a);
 			a++;
 		}
-		System.out.println(""); //°ø¹é »ý¼º(¿£ÅÍ)
+		System.out.println(""); //ê³µë°± ìƒì„±(ì—”í„°)
 		
-		int b = 1; //1~100±îÁö Áß È¦¼ö¸¸ Ãâ·Â(while,if È°¿ë)
+		int b = 1; //1~100 í™€ìˆ˜ ì¶œë ¥(while í™œìš©)
 		while(b<=100) {
-			if(b%2==1) {//% ³ª¸ÓÁö ¿¬»êÀÚ. 3%2=1.
+			if(b%2==1) {// %, ë‚˜ë¨¸ì§€ ì—°ì‚°ìž. 3%2=1.
 				System.out.println(b);
 			}
 			b++;
 		}
-		System.out.println(""); //°ø¹é »ý¼º(¿£ÅÍ)
+		System.out.println(""); //ê³µë°± ìƒì„±(ì—”í„°)
 		
-		int c = 1; //1~100»çÀÌÀÇ 5ÀÇ ¹è¼ö¸¸ Ãâ·Â(while,if È°¿ë)
+		int c = 1; //1~100 ì‚¬ì´ì˜ 5ì˜ ë°°ìˆ˜ë§Œ ì¶œë ¥(while,if í™œìš©)
 		while(c<=100) {
 			if(c%5==0) {
 				System.out.println(c);

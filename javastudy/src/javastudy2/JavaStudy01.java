@@ -3,12 +3,12 @@ package javastudy2;
 public class JavaStudy01 {
 
 	public static void main(String[] args) {
-		// 1~100ÀÇ Á¤¼ö¸¦ Ãâ·ÂÇÏ´Â for ¹®
+		// 1~100 ì¶œë ¥ (for í™œìš©)
 		for(int n=1; n<101; n++) {
 			System.out.println(n);
 		}
 		System.out.println("");
-		//100 ÀÌÇÏÀÇ È¦¼ö Ãâ·Â for¹®.
+		//100 ì´í•˜ í™€ìˆ˜(for í™œìš©)
 		for(int i=1;  i<=100; i++) {
 			if(i%2==1) {
 				System.out.println(i);

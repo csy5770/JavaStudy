@@ -6,37 +6,37 @@ public class JavaStudy8 {
 
 	public static void main(String[] args) {
 		/*
-		 * 1. »ç¿ëÀÚ ÀÔ·ÂÀ» ¹ŞÀ½
-		 * 2. ÀÔ·Â °ªÀÌ 'x'¸é "ÇÁ·Î±×·¥ Á¾·á"¸¦ Ãâ·ÂÇÏ°í ÇÁ·Î±×·¥ Á¾·á.
-		 * 3. ÀÔ·Â °ª 
-		 * 		(a) 'm'ÀÌ¸é "¸Ş´º¸®½ºÆ®"¸¦ Ãâ·Â
-		 * 		(b) 'o'¸é "ÁÖ¹®"À» Ãâ·Â
-		 * 		(c) 's'¸é "¸ÅÃâÇöÈ²" Ãâ·Â.
-		 * 4. 1.·Î µ¹¾Æ°£´Ù.
+		 * 1. ì‚¬ìš©ì ì…ë ¥ì„ ë°›ìŒ
+		 * 2. ì…ë ¥ ê°’ì´ 'x'ë©´ "í”„ë¡œê·¸ë¨ ì¢…ë£Œ"ë¥¼ ì¶œë ¥í•˜ê³  í”„ë¡œê·¸ë¨ ì¢…ë£Œ.
+		 * 3. ì…ë ¥ ê°’ 
+		 * 		(a) 'm'ì´ë©´ "ë©”ë‰´ë¦¬ìŠ¤íŠ¸"ë¥¼ ì¶œë ¥
+		 * 		(b) 'o'ë©´ "ì£¼ë¬¸"ì„ ì¶œë ¥
+		 * 		(c) 's'ë©´ "ë§¤ì¶œí˜„í™©" ì¶œë ¥.
+		 * 4. 1.ë¡œ ëŒì•„ê°„ë‹¤.
 		 */
 		Scanner s = new Scanner(System.in);
-		//Scanner s¶ó´Â °´Ã¼ ¸Ş¼­µå¸¦ »ı¼º.
+		//Scanner së¼ëŠ” ê°ì²´ ë©”ì„œë“œë¥¼ ìƒì„±
 
 		while (true) {
-			// s.nextLine() »ç¿ëÀÚÇÑÅ× °ø¹éÀ» Æ÷ÇÔÇÑ ¹®ÀÚ¿­À» ÀÔ·Â¹Ş´Â ¸Ş¼­µå(ÇÔ¼ö)
+			// s.nextLine() ì‚¬ìš©ìí•œí…Œ ê³µë°±ì„ í¬í•¨í•œ ë¬¸ìì—´ì„ ì…ë ¥ë°›ëŠ” ë©”ì„œë“œ(í•¨ìˆ˜)
 			String str = s.nextLine();
 			if(str.equals("x")|| str.equals("X")) {
-				System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+				System.out.println("ì¢…ë£Œ");
 				s.close();
-				break; //break´Â ¹İº¹¹® Á¾·á
-				//main()ÇÔ¼ö¿¡¼­ÀÇ return Àº ÇÁ·Î±×·¥ Á¾·á 
+				break; //breakëŠ” ë°˜ë³µë¬¸ ì¢…ë£Œ
+				//main()í•¨ìˆ˜ì—ì„œì˜ return ì€ í”„ë¡œê·¸ë¨ ì¢…ë£Œ 
 			}
 			else if(str.equals("m")|| str.equals("M")) {
-				System.out.println("¸Ş´º");
+				System.out.println("ë©”ë‰´");
 			}
 			else if(str.equals("o")|| str.equals("O")) {
-				System.out.println("ÁÖ¹®");
+				System.out.println("ì£¼ë¬¸");
 			}
 			else if(str.equals("s")|| str.equals("S")) {
-				System.out.println("¸ÅÃâ");
+				System.out.println("ë§¤ì¶œ");
 			}
 			else {
-				System.out.println("Àß¸ø µÈ ÀÔ·Â");
+				System.out.println("ì˜ëª» ëœ ì…ë ¥");
 			}
 		
 		}
