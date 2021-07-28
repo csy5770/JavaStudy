@@ -19,6 +19,7 @@ public class JavaStudy002 {
 		System.out.println("");
 		studentName.set(0, "김");
 		studentName.set(2, "형(스카이캐슬 아님)"); //수정(replace)
+		
 		for(int i=0; i<studentName.size(); i++) {
 			System.out.println(studentName.get(i));//조회
 		}

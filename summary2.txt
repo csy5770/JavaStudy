@@ -1,0 +1,24 @@
+Car seltos = new Car();
+		seltos.nColor="white"; // setting
+		seltos.maxSpeed=240;
+		seltos.nSpeed=0;
+		seltos.guest=5;
+		seltos.modelName="Trendy";
+		seltos.nWheel=4;
+		seltos.dailyRun=new ArrayList<Integer>();
+		seltos.dailyRun.add(23);
+		seltos.dailyRun.add(52);
+		seltos.dailyRun.add(42);
+		seltos.dailyRun.add(112);
+		System.out.println("색상:"+seltos.nColor);  // getting
+		System.out.println("최고속도:"+seltos.maxSpeed);
+		System.out.println("현재속도:"+seltos.nSpeed);
+		System.out.println("최대승객수:"+seltos.guest);
+		System.out.println("모델명:"+seltos.modelName);
+		System.out.println("바퀴갯수:"+seltos.nWheel);
+		for(int run:seltos.dailyRun) { // advance for
+			System.out.println(run);
+		}
+		for(int i=0;i<seltos.dailyRun.size();i++) {  // legacy for
+			System.out.println(seltos.dailyRun.get(i));
+		}
