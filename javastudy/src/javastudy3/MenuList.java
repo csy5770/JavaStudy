@@ -12,7 +12,7 @@ public class MenuList {
 		Scanner s = new Scanner(System.in);
 		
 		Menu menu = new Menu();
-		menu.init();
+		
 		
 		while(true) {
 			System.out.println("메뉴를 입력해주세요");

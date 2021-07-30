@@ -3,17 +3,13 @@ package javastudy3;
 public class Auto {
 
 	public static void main(String[] args) {
-		Car sonata = new Car();
-			sonata.nColor = "white"; //필드(변수)에 직접 접근
-			
-			//메소드를 통해서 필드(변수)에 접근.
-			sonata.setnColor("cream white");
-			System.out.println("차량 색상: " +sonata.getnColor());
-			sonata.setnSpeed(100);
-			System.out.println("현재 속도: "+sonata.getnSpeed()+"km/h");
-			sonata.setGuest(4);
-			System.out.println("탑승 인원: "+sonata.getGuest()+"명");
-			
+		Car sonata=new Car("white",4,240,50,"Sonata DN8",4);
+			System.out.println("Sonata의 색상: "+ sonata.getnColor());
+			System.out.println("Sonata의 탑승인원: "+ sonata.getGuest());
+			System.out.println("Sonata의 최고시속: "+ sonata.getMaxSpeed());
+			System.out.println("Sonata의 현재시속: "+ sonata.getnSpeed());
+			System.out.println("모델명: "+ sonata.getModelName());
+			System.out.println("Sonata의 바퀴 수: "+ sonata.getnWheel());
 	}
 
 }
