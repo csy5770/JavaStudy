@@ -15,7 +15,9 @@ public class MenuList2 {
 		// x:프로그램 종료.
 		Scanner scn=new Scanner(System.in);
 		Menu menu = new Menu();
+		Order order = new Order();
 		menu.load();
+		
 		
 		while (true) {
 			// s.nextLine() 사용자한테 공백을 포함한 문자열을 입력받는 메서드(함수)
@@ -88,7 +90,38 @@ public class MenuList2 {
 				
 			}
 			else if(str.equals("o")|| str.equals("O")) {
-				System.out.println("주문");
+				
+				System.out.println("");
+				menu.showMenu();
+				while(true) {
+					
+					System.out.println("메뉴번호를 선택하세요");
+					int mn = scn.nextInt();
+					scn.nextLine();
+					if(mn==0) {
+						System.out.println("메뉴 선택 완료");
+						System.out.println("");
+						System.out.println("폰 번호 입력해주세요");
+						String pn = scn.nextLine();
+						order.addMobile(pn);
+						int totalSum = order.getTotalSum();
+						System.out.println("총 가격은: "+totalSum+"원");
+						break;
+					}
+					final String menuName = menu.getName(mn);
+					final int menuPrice = menu.getPrice(mn);
+					System.out.println("수량을 입력해 주세요");
+					int count = scn.nextInt();
+					int totalPrice = order.addOrder(menuName,menuPrice,count);
+					System.out.println("가격");
+					System.out.println(totalPrice+"원");
+					System.out.println("");
+					System.out.println("0을 입력하면 종료 후 합산가격을 출력합니다.");
+					System.out.println("");
+					
+					
+					
+				}
 			}
 			else if(str.equals("s")|| str.equals("S")) {
 				System.out.println("매출");

@@ -88,6 +88,12 @@ public class Menu {
 		}	
 		System.out.println("");
 	}
+	String getName(int menu_num) {
+		return this.alName.get(menu_num-1);
+	}
+	int getPrice(int menu_num) {
+		return this.alPrice.get(menu_num-1);
+	}
 	
 	void save() throws IOException { //ArrayList alName과 alPrice를 menu.txt에 저장.
 		File file=new File("d:/menu.txt");
