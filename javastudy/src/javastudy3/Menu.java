@@ -60,14 +60,13 @@ public class Menu {
 		Scanner s2 = new Scanner(System.in);
 		System.out.println("수정할 메뉴번호");
 		int id = s2.nextInt();//메뉴번호 스캐너
-		if(id<1 || id>this.alName.size()) {
-			System.out.println("잘못된 입력입니다");
-		}
+		s2.nextLine();
 		System.out.println("이 이름으로 변경합니다 ");
 		String nm = s2.nextLine(); //변경할 메뉴 이름 스캐너
+		this.alName.set(id-1,nm);
 		System.out.println("이 가격으로 변경합니다");
 		int npr = s2.nextInt(); //변경할 가격 스캐너
-		this.alName.set(id-1,nm);
+		s2.nextLine();
 		this.alPrice.set(id-1,npr);
 		System.out.println("메뉴 변경 완료");
 		System.out.println("");
@@ -78,10 +77,6 @@ public class Menu {
 		Scanner s3=new Scanner(System.in);
 		int num = s3.nextInt();
 		this.alName.remove(num-1);
-		if(num<1 || num>this.alName.size()) {
-			System.out.println("메뉴 길이보다 큰 번호가 입력 됨");
-			return;
-		}
 		System.out.println("삭제 되었습니다.");
 		System.out.println("");
 	}
